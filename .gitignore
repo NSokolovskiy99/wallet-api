@@ -1,0 +1,33 @@
+# Виртуальные окружения
+.venv/
+venv/
+env/
+
+# Байт‑код и кэш
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+*.swp
+*.swo
+
+# Данные БД (если хранятся локально как файлы)
+*.db
+*.sqlite
+pgdata/
+
+# Артефакты сборки
+dist/
+build/
+*.egg-info/
+
+# Локальные конфиги и секреты
+.env
+.DS_Store
