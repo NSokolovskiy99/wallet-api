@@ -17,7 +17,7 @@ class Wallet(Model):
     balance: Mapped[Decimal] = mapped_column(
         Numeric(precision=12, scale=2),
         nullable=False,
-        default=Decimal("0.00")
+        default=Decimal("0.00")  # Для прода сделать server_default=text("0.00") 
     )
 
     __table_args__ = (

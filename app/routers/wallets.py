@@ -30,10 +30,10 @@ async def get_wallet_balance(session: SessionDep, wallet_id: uuid.UUID):
 async def wallet_operation(session: SessionDep, wallet_id: uuid.UUID, body: WalletRequest):
     try:
         wallet = await WalletService.handle_operation(
-            session = session,
-            wallet_id = wallet_id,
-            operation_type = body.operation_type,
-            amount = body.amount 
+            session=session,
+            wallet_id=wallet_id,
+            operation_type=body.operation_type,
+            amount=body.amount 
         )
         return wallet
     except WalletNotFoundException as e:
